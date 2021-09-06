@@ -1,0 +1,29 @@
+mối quan hệ cha con hay còn gọi là mối quan hệ is a, square rectangle, hình vuông và hình chữ nhật ko có chiều ngược lại
+mối quan hệ cha con của 2 class là đại diện của tính đơn kế thừa trong java, 1 cha có nhiều con, 
+Trong class cha, cha chỉ chứa những đặc điểm chung của class con, cha có thể là abstract, cha có thể là interface, nhưng interface được ví như hội nhóm nên ko thể hiện tính chất đơn kế thừa
+Trong class con kế thừa class cha với mục đích lấy lại những đặc tính do cha gửi , đông thời class con có thể chứa những thuộc tính riêng của nó ko cho cha sử dụng.
+Constructor con = của cha + của riêng con 
+super phải đứng ở đầu trong constructor của con, có cha thì mới có con
+vùng nhớ của con rộng hơn vùng nhớ của cha.
+
+Con kế thừa của cha các hành động nhưng nếu như hành động đó ko phù hợp với con, thì con có quyền override độ lại hàm cha, -> đại diện của tính đa hình trong mối quan hệ cha con
+
+1 abstract class sẽ có 1 methos bình thường và các abs methos
+1 class bình thường nếu bên trong chứa 1 abstract methos thì nó chính là abs class
+abs class sử dụng khi muốn gom nhóm nhiều class khác nhau về mặt công thức methos nhưng trùng tên, có ít nhất 1 đặc điểm chung
+1 abs class sẽ có methos bình thường và methos abs, methos abs ko có body vì được ví như 1 khái niệm chưa được định nghĩa
+từ abs class, ta có thể tạo abs thông qua 2 cách
+cách 1: thông qua class trung gian,
+c2: thông qua kỹ thuật annoymus
+class trung gian có nhiệm vụ implement abs của cha nếu clas trung gian ko implemnt abs methos, hoặc thiếu -> abs class, tiếp tục tạo class trung gian
+annoymus sử dụng khi bạn muốn tạo abs class hoặc interface, nhưng ko muốn thông qua class thứ ba -> sd kỹ thuật annoymus
+có 4 trường hợp nên dùng: -khi ngại đặt tên cho class, ko biết đặt tên, muốn tách biệt obj khỏi các abs của class
+ưu điểm: nhanh, take away
+nhược điểm: ko tái sd
+
+int a = 1;
+int b = ++a + a++ - a-- - --a
+    //   2 +   2  - 3   -   1
+gặp a thì viết ra
+
+hamf owr program phai cos static
